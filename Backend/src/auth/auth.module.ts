@@ -9,7 +9,7 @@ import { AuthController } from './auth.controller';
 import { JwtStrategy } from './strategies/jwt.strategy';
 import { JwtRefreshStrategy } from './strategies/jwt-refresh.strategy';
 import { GoogleStrategy } from './strategies/google.strategy';
-import { OtpRepository } from 'src/repository/otp.repository';
+import { OtpRepository } from '../repository/otp.repository';
 
 @Module({
   imports: [

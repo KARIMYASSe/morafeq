@@ -24,8 +24,8 @@ import { CreateRoomDto, UpdateRoomDto } from './dto/create-room.dto';
 import { RolesGuard } from '../auth/guards/roles.guard';
 import { Roles } from '../auth/decorators/roles.decorator';
 import { CurrentUser } from '../auth/decorators/current-user.decorator';
-import { ReviewsService } from 'src/reviews/reviews.service';
-import { QueryReviewsDto } from 'src/reviews/dto/query-reviews.dto';
+import { ReviewsService } from '../reviews/reviews.service';
+import { QueryReviewsDto } from '../reviews/dto/query-reviews.dto';
 
 @Controller('listings')
 export class ListingsController {
