@@ -35,8 +35,8 @@ function Breadcrumb({ title }) {
 function DetailSkeleton() {
   return (
     <div className="space-y-4 animate-pulse">
-      <div className="h-[340px] rounded-2xl bg-slate-200" />
-      <div className="grid grid-cols-4 gap-2">
+      <div className="h-[220px] rounded-2xl bg-slate-200 sm:h-[340px]" />
+      <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
         {Array.from({ length: 4 }).map((_, i) => (
           <div key={i} className="h-28 rounded-xl bg-slate-200" />
         ))}
@@ -71,7 +71,7 @@ export function ExpatriateListingDetailPage() {
       {!loading && listing && (
         <div className="flex flex-col gap-6 lg:flex-row items-start">
           {/* ── Left column: booking card (sticky) ── */}
-          <aside className="w-full max-w-[260px] shrink-0 lg:w-[260px]">
+          <aside className="w-full lg:max-w-[260px] lg:shrink-0 lg:w-[260px]">
             <BookingCard
               monthlyRent={listing.monthlyRent}
               depositAmount={listing.depositAmount}

@@ -3,10 +3,10 @@ import logo from "../../../../images/logo.png";
 
 export function AuthCard({ title, subtitle, activeTab, children, footer }) {
   return (
-    <section className="w-full max-w-[466px] overflow-hidden rounded-[26px] bg-white shadow-2xl shadow-black/30">
-      <div className="bg-[#075ed8] px-8 pb-6 pt-8 text-center text-white">
+    <section className="w-full max-w-[466px] overflow-hidden rounded-2xl bg-white shadow-2xl shadow-black/30 sm:rounded-[26px]">
+      <div className="bg-[#075ed8] px-5 pb-5 pt-6 text-center text-white sm:px-8 sm:pb-6 sm:pt-8">
         <img src={logo} alt="مرافق" className="mx-auto h-16 w-auto object-contain" />
-        <h1 className="mt-4 text-2xl font-black leading-tight">{title}</h1>
+        <h1 className="mt-4 text-xl font-black leading-tight sm:text-2xl">{title}</h1>
         <p className="mt-2 text-sm font-medium text-blue-100">{subtitle}</p>
 
         {activeTab ? (
@@ -35,7 +35,7 @@ export function AuthCard({ title, subtitle, activeTab, children, footer }) {
         ) : null}
       </div>
 
-      <div className="px-6 py-7 sm:px-10">{children}</div>
+      <div className="px-4 py-6 sm:px-10 sm:py-7">{children}</div>
       {footer ? (
         <div className="border-t border-slate-100 px-6 py-5 text-center text-sm text-slate-500 sm:px-10">
           {footer}

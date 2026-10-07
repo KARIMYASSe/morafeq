@@ -9,7 +9,7 @@ export function AuthLayout({ children }) {
         className="fixed inset-0 h-screen w-full scale-105 object-cover"
       />
       <div className="fixed inset-0 h-screen bg-gradient-to-b from-[#0f3154]/85 via-[#12375b]/75 to-black/70" />
-      <section className="relative z-10 flex min-h-screen items-center justify-center px-4 py-28 sm:px-6">
+      <section className="relative z-10 flex min-h-screen items-center justify-center px-3 py-20 sm:px-6 sm:py-28">
         {children}
       </section>
     </main>

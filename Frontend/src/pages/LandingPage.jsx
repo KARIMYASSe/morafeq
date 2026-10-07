@@ -97,22 +97,22 @@ export function LandingPage() {
 
   return (
     <main className="bg-[#f7f9fc] text-[#111827]">
-      <section className="relative isolate overflow-hidden bg-[#0b3569] pt-[76px] text-white">
+      <section className="relative isolate overflow-hidden bg-[#0b3569] pt-[64px] text-white sm:pt-[76px]">
         <img
           src={heroBackground}
           alt=""
-          className="absolute inset-x-0 top-[76px] h-[405px] w-full object-cover opacity-70"
+          className="absolute inset-x-0 top-[64px] h-[430px] sm:top-[76px] sm:h-[405px] w-full object-cover opacity-70"
         />
-        <div className="absolute inset-x-0 top-[76px] h-[405px] bg-[#082f61]/75" />
+        <div className="absolute inset-x-0 top-[64px] h-[430px] sm:top-[76px] sm:h-[405px] bg-[#082f61]/75" />
 
-        <div className="relative z-10 mx-auto flex min-h-[405px] max-w-6xl flex-col items-center justify-center px-4 pb-14 pt-10 text-center">
-          <h1 className="text-[34px] font-black leading-tight sm:text-[48px]">
+        <div className="relative z-10 mx-auto flex min-h-[430px] max-w-6xl flex-col items-center justify-center px-4 pb-10 pt-8 text-center sm:min-h-[405px] sm:pb-14 sm:pt-10">
+          <h1 className="text-[30px] font-black leading-tight sm:text-[48px]">
             مرافق موثوق للطلاب
             <span className="block">
               بدون نصب، <span className="text-[#67a7ff]">بالقرب من جامعتك</span>
             </span>
           </h1>
-          <p className="mt-4 text-lg font-semibold leading-8 text-blue-50">
+          <p className="mt-4 text-base font-semibold leading-7 text-blue-50 sm:text-lg sm:leading-8">
             ابحث عن شقق موثقة وآمنة تناسب ميزانيتك
             <span className="block">واحجز معاينة بكل سهولة</span>
           </p>
@@ -315,7 +315,7 @@ export function LandingPage() {
           </div>
           <Link
             to="#listings"
-            className="mt-8 inline-flex h-12 min-w-[280px] items-center justify-center gap-3 rounded-lg bg-[#075fd6] px-8 text-base font-black text-white shadow-lg shadow-blue-200 transition hover:bg-[#0754bd]"
+            className="mt-8 inline-flex h-12 w-full max-w-[280px] items-center justify-center gap-3 rounded-lg bg-[#075fd6] px-5 text-sm font-black text-white shadow-lg shadow-blue-200 transition hover:bg-[#0754bd] sm:text-base"
           >
             ابدأ البحث عن سكنك
             <ChevronLeftIcon className="h-5 w-5" />

@@ -66,7 +66,7 @@ export function WelcomeCard({ firstName, totalListings = 0 }) {
 
 
       {/* Stats row */}
-      <div className="mt-5 grid grid-cols-3 gap-3">
+      <div className="mt-5 grid grid-cols-1 gap-3 sm:grid-cols-3">
         {[
           { value: "96%", label: "نسبة رضا المستأجرين", emoji: "⭐" },
           { value: "18", label: "منطقة متاحة", emoji: "📍" },

@@ -7,9 +7,9 @@ export function ConversationList({
   onSelectConversation,
 }) {
   return (
-    <aside dir="rtl" className="border-r border-slate-200 bg-slate-50">
-      <div className="border-b border-slate-200 p-5">
-        <h1 className="text-2xl font-black text-slate-900">
+    <aside dir="rtl" className="flex h-full min-h-0 flex-col border-slate-200 bg-slate-50 lg:border-r">
+      <div className="border-b border-slate-200 p-4 sm:p-5">
+        <h1 className="text-xl font-black text-slate-900 sm:text-2xl">
           الرسائل
         </h1>
 
@@ -18,7 +18,7 @@ export function ConversationList({
         </p>
       </div>
 
-      <div className="h-[calc(100%-98px)] overflow-y-auto">
+      <div className="min-h-0 flex-1 overflow-y-auto">
         {isLoading ? (
           <p className="p-5 text-sm text-slate-500">
             جاري تحميل المحادثات...

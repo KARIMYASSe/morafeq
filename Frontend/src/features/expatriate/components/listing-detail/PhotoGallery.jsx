@@ -41,7 +41,7 @@ export function PhotoGallery({ photos = [] }) {
       <div className="space-y-2">
         {/* Hero */}
         <div
-          className="relative h-[340px] overflow-hidden rounded-2xl bg-slate-900 cursor-pointer"
+          className="relative h-[220px] overflow-hidden rounded-2xl bg-slate-900 cursor-pointer sm:h-[340px]"
           onClick={() => openViewer(current)}
         >
           <img

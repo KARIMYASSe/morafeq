@@ -56,11 +56,11 @@ export function AppNavbar() {
       <header
         className={`fixed inset-x-0 top-0 z-40 border-b border-slate-200 bg-white/95 shadow-sm backdrop-blur ${sidebarPaddingClass}`}
       >
-        <nav className="mx-auto flex h-[76px] max-w-7xl items-center justify-between px-4 sm:px-8">
+        <nav className="mx-auto flex h-[64px] max-w-7xl items-center justify-between gap-2 px-3 sm:h-[76px] sm:px-8">
           <Link to="/" className="flex items-center gap-3">
             <div className="flex items-center gap-2">
-              <img src={logo1} alt="مرافق" className="h-16 w-auto" />
-              <img src={logo2} alt="مرافق" className="h-16 w-auto" />
+              <img src={logo1} alt="مرافق" className="h-10 w-auto sm:h-16" />
+              <img src={logo2} alt="مرافق" className="h-10 w-auto sm:h-16" />
             </div>
           </Link>
 
@@ -102,7 +102,7 @@ export function AppNavbar() {
               <button
                 type="button"
                 onClick={logout}
-                className="rounded-lg bg-[#075fd6] px-5 py-3 text-sm font-black text-white shadow transition hover:bg-[#0754bd]"
+                className="rounded-lg bg-[#075fd6] px-3 py-2.5 text-xs font-black text-white shadow transition hover:bg-[#0754bd] sm:px-5 sm:py-3 sm:text-sm"
               >
                 تسجيل الخروج
               </button>
@@ -116,7 +116,7 @@ export function AppNavbar() {
                 </NavLink>
                 <NavLink
                   to="/login"
-                  className="inline-flex items-center gap-3 rounded-lg bg-[#075fd6] px-5 py-3 text-sm font-black text-white shadow transition hover:bg-[#0754bd]"
+                  className="inline-flex items-center gap-2 rounded-lg bg-[#075fd6] px-3 py-2.5 text-xs font-black text-white shadow transition hover:bg-[#0754bd] sm:gap-3 sm:px-5 sm:py-3 sm:text-sm"
                 >
                   تسجيل الدخول
                   <svg
@@ -145,11 +145,11 @@ export function AppNavbar() {
     <header
       className={`fixed inset-x-0 top-0 z-30 border-b border-slate-200 bg-white/95 shadow-sm backdrop-blur ${sidebarPaddingClass}`}
     >
-      <nav className="mx-auto flex h-[68px] max-w-7xl items-center justify-between px-5 sm:px-8">
+      <nav className="mx-auto flex h-[68px] max-w-7xl items-center justify-between gap-2 px-3 sm:px-8">
         <Link to="/" className="flex items-center gap-2">
           <div className="flex items-center gap-2">
-            <img src={logo1} alt="مرافق" className="h-12 w-auto" />
-            <img src={logo2} alt="مرافق" className="h-12 w-auto" />
+            <img src={logo1} alt="مرافق" className="h-9 w-auto sm:h-12" />
+            <img src={logo2} alt="مرافق" className="h-9 w-auto sm:h-12" />
           </div>
         </Link>
 
@@ -187,7 +187,7 @@ export function AppNavbar() {
               <button
                 type="button"
                 onClick={logout}
-                className="rounded-lg bg-[#075fd6] px-5 py-2.5 text-sm font-black text-white shadow transition hover:bg-[#0754bd]"
+                className="rounded-lg bg-[#075fd6] px-3 py-2.5 text-xs font-black text-white shadow transition hover:bg-[#0754bd] sm:px-5 sm:text-sm"
               >
                 تسجيل الخروج
               </button>
