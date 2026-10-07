@@ -25,7 +25,7 @@ import { LoginDto } from './dto/login.dto';
 import { JwtPayload } from './interfaces/jwt-payload.interface';
 import * as bcrypt from 'bcryptjs';
 import * as CryptoJS from 'crypto-js';
-import { sendEmail } from 'src/common/emails/sendEmail';
+import { sendEmail } from '../common/emails/sendEmail';
 import { OtpRepository } from 'src/repository/otp.repository';
 import { OTPTypes, UserRole, VerificationStatus } from '@prisma/client';
 import { parsePhoneNumberFromString } from 'libphonenumber-js';
