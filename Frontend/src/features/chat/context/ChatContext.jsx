@@ -1,4 +1,11 @@
-import { createContext, useContext, useCallback, useEffect, useState, useRef } from "react";
+import {
+  createContext,
+  useContext,
+  useCallback,
+  useEffect,
+  useState,
+  useRef,
+} from "react";
 import { chatApi } from "../services/chatApi";
 
 const ChatContext = createContext(null);
@@ -7,7 +14,7 @@ export function ChatProvider({ children }) {
   const [conversations, setConversations] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
-  
+
   // Refs for deduplication and initialization
   const isLoadingRef = useRef(false);
   const initializedRef = useRef(false);
@@ -17,7 +24,7 @@ export function ChatProvider({ children }) {
   // Calculate unread count from conversations
   const unreadCount = conversations.reduce(
     (total, conversation) => total + Number(conversation.unreadCount ?? 0),
-    0
+    0,
   );
 
   // Load conversations with deduplication
@@ -90,6 +97,7 @@ export function ChatProvider({ children }) {
 
   const value = {
     conversations,
+    setConversations,
     unreadCount,
     isLoading,
     error,
